@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imgUpBg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/rounded_upper_bg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rlUpperLayuout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgUpBg"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="20sp"
+
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/tvSignUp"
+            android:clickable="true"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create An Account"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rlUpperLayuout"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Full Name"
+        android:layout_below="@+id/tvCAA"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Email"
+        android:layout_below="@+id/edtName"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtPass"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtEmail"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter your password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtConfirmPass"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtPass"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtConfirmPass"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"/>
+
+
+</RelativeLayout>

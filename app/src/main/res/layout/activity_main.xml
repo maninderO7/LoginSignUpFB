@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvShowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvDetails"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvShowMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id - "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvDetails"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvShowPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass - "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvShowMail"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>
